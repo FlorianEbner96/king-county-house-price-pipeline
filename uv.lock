@@ -568,6 +568,60 @@ wheels = [
 ]
 
 [[package]]
+name = "king-county-house-price-pipeline"
+version = "0.1.0"
+source = { virtual = "." }
+default-groups = ["api", "dev"]
+dependencies = [
+    { name = "matplotlib" },
+    { name = "pandas" },
+    { name = "plotly" },
+    { name = "scikit-learn" },
+    { name = "seaborn" },
+    { name = "skops" },
+]
+
+[package.dev-dependencies]
+api = [
+    { name = "fastapi" },
+    { name = "psycopg", extra = ["binary"] },
+    { name = "python-dotenv" },
+    { name = "sqlalchemy" },
+    { name = "uvicorn" },
+]
+dev = [
+    { name = "httpx" },
+    { name = "ipykernel" },
+    { name = "nbformat" },
+    { name = "pytest" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "matplotlib", specifier = ">=3.11.1" },
+    { name = "pandas", specifier = ">=3.0.5" },
+    { name = "plotly", specifier = ">=7.0.0" },
+    { name = "scikit-learn", specifier = ">=1.9.0" },
+    { name = "seaborn", specifier = ">=0.13.2" },
+    { name = "skops", specifier = ">=0.14.0" },
+]
+
+[package.metadata.requires-dev]
+api = [
+    { name = "fastapi", specifier = ">=0.162.0" },
+    { name = "psycopg", extras = ["binary"], specifier = ">=3.3.6" },
+    { name = "python-dotenv", specifier = ">=1.2.4" },
+    { name = "sqlalchemy", specifier = ">=2.1.6" },
+    { name = "uvicorn", specifier = ">=0.54.0" },
+]
+dev = [
+    { name = "httpx", specifier = ">=0.28.1" },
+    { name = "ipykernel", specifier = ">=7.3.0" },
+    { name = "nbformat", specifier = ">=5.11.1" },
+    { name = "pytest", specifier = ">=9.2.0" },
+]
+
+[[package]]
 name = "kiwisolver"
 version = "1.5.1"
 source = { registry = "https://pypi.org/simple" }
@@ -723,60 +777,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/bd/c0/9f7c9a46090390368a4d7bcb76bb87a4a36c421e4c0792cdb53486ffac7a/matplotlib_inline-0.2.2.tar.gz", hash = "sha256:72f3fe8fce36b70d4a5b612f899090cd0401deddc4ea90e1572b9f4bfb058c79", size = 8150, upload-time = "2026-05-08T17:33:33.49Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/41/09/5b161152e2d90f7b87f781c2e1267494aef9c32498df793f73ad0a0a494a/matplotlib_inline-0.2.2-py3-none-any.whl", hash = "sha256:3c821cf1c209f59fb2d2d64abbf5b23b67bcb2210d663f9918dd851c6da1fcf6", size = 9534, upload-time = "2026-05-08T17:33:32.055Z" },
-]
-
-[[package]]
-name = "mle-refactoring-project"
-version = "0.1.0"
-source = { virtual = "." }
-default-groups = ["api", "dev"]
-dependencies = [
-    { name = "matplotlib" },
-    { name = "pandas" },
-    { name = "plotly" },
-    { name = "scikit-learn" },
-    { name = "seaborn" },
-    { name = "skops" },
-]
-
-[package.dev-dependencies]
-api = [
-    { name = "fastapi" },
-    { name = "psycopg", extra = ["binary"] },
-    { name = "python-dotenv" },
-    { name = "sqlalchemy" },
-    { name = "uvicorn" },
-]
-dev = [
-    { name = "httpx" },
-    { name = "ipykernel" },
-    { name = "nbformat" },
-    { name = "pytest" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "matplotlib", specifier = ">=3.11.1" },
-    { name = "pandas", specifier = ">=3.0.5" },
-    { name = "plotly", specifier = ">=7.0.0" },
-    { name = "scikit-learn", specifier = ">=1.9.0" },
-    { name = "seaborn", specifier = ">=0.13.2" },
-    { name = "skops", specifier = ">=0.14.0" },
-]
-
-[package.metadata.requires-dev]
-api = [
-    { name = "fastapi", specifier = ">=0.162.0" },
-    { name = "psycopg", extras = ["binary"], specifier = ">=3.3.6" },
-    { name = "python-dotenv", specifier = ">=1.2.4" },
-    { name = "sqlalchemy", specifier = ">=2.1.6" },
-    { name = "uvicorn", specifier = ">=0.54.0" },
-]
-dev = [
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "ipykernel", specifier = ">=7.3.0" },
-    { name = "nbformat", specifier = ">=5.11.1" },
-    { name = "pytest", specifier = ">=9.2.0" },
 ]
 
 [[package]]

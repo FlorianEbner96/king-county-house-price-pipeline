@@ -1,5 +1,5 @@
 # Fixed project name, so container and volume names don't depend on the folder name.
-name: mle-refactoring-project
+name: king-county-house-price-pipeline
 
 services:
   db:
